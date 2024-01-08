@@ -37,7 +37,6 @@
 ---
 👥 소우주, 손세림, 신대영, 양지혜, 조예린, 지현근
 ---
----
 
 ## 📄 1. 프로젝트 기획
 
@@ -1705,7 +1704,7 @@ SELECT
 ### 6-2. 개선 여지
 
 ### 서브 타입의 물리모델 결정기준
-- Rollup, Rolldown, Identity ****
+- Rollup, Rolldown, Identity
 
 ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2016.png)
 
