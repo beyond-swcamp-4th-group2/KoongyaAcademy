@@ -1,22 +1,5 @@
 # README
 
-- 정리할 것
-    - [ ]  WBS 작성하기
-    - [ ]  테스트케이스 CRUD, JOIN, Transaction으로 구분해서 영상 촬영
-    - [ ]  6-1 1월 5일자 회의록 추가
-    - [ ]  6-2 보충, 6-3 작성
-    - [ ]  4 보충 (서버현황영상)
-    
-- 필수산출물
-1.	프로젝트 기획서
-2.	﻿﻿﻿요구사항 명세서
-3.	﻿﻿﻿개념/논리 모델링을 통한 정규화 된 ERD 결과문
-4.	﻿﻿﻿물리 모델링을 통해 작성된 DDL 쿼리문
-5.	﻿﻿﻿Ubuntu Linux Os 환경의 replication DB 서버 구축 현황
-6.	﻿﻿﻿CRUD, JOIN, TRANSACTION 관련 테스트 케이스에 확인용 테스트 쿼리문 실행 결과
-    
-    
-
 # ✏️ **Koongya Academy**
 
 ---
@@ -45,27 +28,37 @@
 
 [onejo WBS.xlsx](https://docs.google.com/spreadsheets/d/125BpUohO1kYKRrj6PqLOdRJN6mHNbAyU/edit#gid=1057334268)
 
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled.png)
+
 ### 1-4. 요구사항 명세서
 
 [요구사항명세서](https://docs.google.com/spreadsheets/d/1osO60pgOUC9nGXAfSiQJHdxwqVV4rpn3SHh1lWrW7-s/edit#gid=0)
 
-![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled.png)
-
-## 📌 2. 개념&논리 모델링 (ERD Cloud)
-
 ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%201.png)
 
-[KoongyaAcademy.damx](README%2090456e44faab4013bf4520930090a7ab/KoongyaAcademy.damx)
+## 📌 2. 개념&논리 모델링
 
-![ERD Cloud를 사용한 개념/논리 모델링 작성](README%2090456e44faab4013bf4520930090a7ab/Untitled%202.png)
+- **개념모델링**
+    
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%202.png)
+    
+- **논리모델링(IE 표기법)**
+    
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%203.png)
+    
+    [Koongya Academy](https://www.erdcloud.com/d/KrziAjsk86HevjrzT)
+    
 
-ERD Cloud를 사용한 개념/논리 모델링 작성
-
-링크 붙여넣을 예정
+- **논리모델링(Barker 표기법)**
+    
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%204.png)
+    
+    [KoongyaAcademy.damx](README%2090456e44faab4013bf4520930090a7ab/KoongyaAcademy.damx)
+    
 
 ## 🔍 3. 물리 모델링
 
-![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%203.png)
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%205.png)
 
 - **DDL Query**
     
@@ -720,22 +713,22 @@ ERD Cloud를 사용한 개념/논리 모델링 작성
 
 ## ⚙️ 4. Replication Server 구축 현황
 
-<aside>
-<img src="https://www.notion.so/icons/checkmark_gray.svg" alt="https://www.notion.so/icons/checkmark_gray.svg" width="40px" /> Ubuntu 20.04 / MariaDB 15.1
+### Ubuntu 20.04 / MariaDB 15.1
 
-</aside>
+> Master status
+> 
 
-![Master status](README%2090456e44faab4013bf4520930090a7ab/Untitled%204.png)
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%206.png)
 
-Master status
+> Master IP: 192.168.0.50
+> 
 
-![Master IP: 192.168.0.50](README%2090456e44faab4013bf4520930090a7ab/Untitled%205.png)
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%207.png)
 
-Master IP: 192.168.0.50
+> Slave status
+> 
 
-![Slave status](README%2090456e44faab4013bf4520930090a7ab/Untitled%206.png)
-
-Slave status
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%208.png)
 
 ![Linux Server Proof.gif](README%2090456e44faab4013bf4520930090a7ab/Linux_Server_Proof.gif)
 
@@ -743,17 +736,19 @@ Slave status
 
 ## 🔖 5. 테스트케이스 정의서
 
-![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%207.png)
+[테스트케이스 정의서](https://docs.google.com/spreadsheets/d/1qcAa6c_0MqGflC10ehZl9Xgtp1THU9ZJ3mJ6bYfTiaI/edit#gid=0)
+
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%209.png)
 
 ### 5-1. CRUD Case
 
-- Create
+- **Create**
     - Creating table case
         
         ![Linux Create Table.gif](README%2090456e44faab4013bf4520930090a7ab/Linux_Create_Table.gif)
         
     
-- Read
+- **Read**
     - **TEST CASE: FR-004**
         
         ```sql
@@ -814,6 +809,8 @@ Slave status
          WHERE inst_name IS NOT NULL;
         ```
         
+        ![fr06.gif](README%2090456e44faab4013bf4520930090a7ab/fr06.gif)
+        
     - **TEST CASE: FR-007**
         
         ```sql
@@ -847,6 +844,8 @@ Slave status
          WHERE inst_status = 'N';
         ```
         
+        ![fr07.gif](README%2090456e44faab4013bf4520930090a7ab/fr07.gif)
+        
     - **TEST CASE: FR-011**
         
         ```sql
@@ -859,6 +858,8 @@ Slave status
         		 , bk_price
           FROM book;
         ```
+        
+        ![FR-011_양지혜.gif](README%2090456e44faab4013bf4520930090a7ab/FR-011_%25EC%2596%2591%25EC%25A7%2580%25ED%2598%259C.gif)
         
     - **TEST CASE: FR-014**
         
@@ -899,12 +900,33 @@ Slave status
         SELECT
                level_id
              , level_reference_score
-             , return_reference_score
+             , refund_reference_score
           FROM level;
         ```
         
-- Update
-- Delete
+        ![fr18.gif](README%2090456e44faab4013bf4520930090a7ab/fr18.gif)
+        
+- **Update**
+    
+    ```sql
+    -- 책4의 가격 변동사항 업데이트
+    
+    SELECT * FROM book;
+    
+    UPDATE book
+       SET bk_price = 28000
+     WHERE bk_id = 4;
+    ```
+    
+    ![update.gif](README%2090456e44faab4013bf4520930090a7ab/update.gif)
+    
+- **Delete**
+    - Delete a row of a table
+        
+        ![delete-ezgif.com-video-to-gif-converter.gif](README%2090456e44faab4013bf4520930090a7ab/delete-ezgif.com-video-to-gif-converter.gif)
+        
+        ![15delete-ezgif.com-video-to-gif-converter.gif](README%2090456e44faab4013bf4520930090a7ab/15delete-ezgif.com-video-to-gif-converter.gif)
+        
 
 ### 5-2. JOIN Case
 
@@ -938,6 +960,8 @@ Slave status
       JOIN mem_info b ON (a.dept_id=b.dept_id)
      WHERE b.emp_status = 'Y';
     ```
+    
+    ![FR-002_양지혜.gif](README%2090456e44faab4013bf4520930090a7ab/FR-002_%25EC%2596%2591%25EC%25A7%2580%25ED%2598%259C.gif)
     
 - **TEST CASE: FR-003**
     
@@ -976,6 +1000,8 @@ Slave status
      WHERE a.emp_status = 'Y';
     ```
     
+    ![FR-005_양지혜.gif](README%2090456e44faab4013bf4520930090a7ab/FR-005_%25EC%2596%2591%25EC%25A7%2580%25ED%2598%259C.gif)
+    
 - **TEST CASE: FR-008**
     
     ```sql
@@ -984,13 +1010,15 @@ Slave status
     -- lec_id 를 통하여 그 시험에 해당하는 강좌를 조회할 수 있다.
     
     SELECT
-    		   a.dept_name
-    		 , b.emp_name
-    		 , b.emp_status
-      FROM department a
-      JOIN mem_info b ON (a.dept_id=b.dept_id)
-     WHERE b.emp_status = 'Y';
+           a.exam_type AS '시험유형'
+         , a.exam_date AS '시험일자'
+         , a.exam_location AS '시험장소'
+         , b.lec_name AS '강좌명'
+      FROM exam a
+      JOIN lecture b ON (a.lec_id = b.lec_id);
     ```
+    
+    ![fr08.gif](README%2090456e44faab4013bf4520930090a7ab/fr08.gif)
     
 - **TEST CASE: FR-009**
     
@@ -1032,6 +1060,8 @@ Slave status
       JOIN book b ON (a.bk_id = b.bk_id);
     ```
     
+    ![FR-010_양지혜.gif](README%2090456e44faab4013bf4520930090a7ab/FR-010_%25EC%2596%2591%25EC%25A7%2580%25ED%2598%259C.gif)
+    
 - **TEST CASE: FR-012**
     
     ```sql
@@ -1047,6 +1077,8 @@ Slave status
       FROM lec_record a
       JOIN lecture b ON (a.lec_id = b.lec_id);
     ```
+    
+    ![fr12.gif](README%2090456e44faab4013bf4520930090a7ab/fr12.gif)
     
 - **TEST CASE: FR-013**
     
@@ -1121,6 +1153,8 @@ Slave status
       JOIN student c ON (a.stud_id = c.stud_id);
     ```
     
+    ![fr19.gif](README%2090456e44faab4013bf4520930090a7ab/fr19.gif)
+    
 - **TEST CASE: FR-020**
     
     ```sql
@@ -1161,14 +1195,18 @@ Slave status
       JOIN level c ON (b.level_id = c.level_id);
     ```
     
+    ![fr21.gif](README%2090456e44faab4013bf4520930090a7ab/fr21.gif)
+    
 
 ### 5-3. Transaction Case
 
-- ROLLBACK
+- **ROLLBACK**
     
+    ![transaction_rollback1-ezgif.com-video-to-gif-converter.gif](README%2090456e44faab4013bf4520930090a7ab/transaction_rollback1-ezgif.com-video-to-gif-converter.gif)
     
-- COMMIT
+- **COMMIT**
     
+    ![transaction_commit1-ezgif.com-video-to-gif-converter.gif](README%2090456e44faab4013bf4520930090a7ab/transaction_commit1-ezgif.com-video-to-gif-converter.gif)
     
 
 ## 📗 6. 회고록
@@ -1200,7 +1238,7 @@ Slave status
     
     ### 3. 스터디 사진
     
-    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%208.png)
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2010.png)
     
 - **240102 회의록**
     
@@ -1259,7 +1297,7 @@ Slave status
     
     ### 3. 스터디 사진
     
-    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%209.png)
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2011.png)
     
     ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled.jpeg)
     
@@ -1290,7 +1328,7 @@ Slave status
     
     ### 3. 스터디 사진
     
-    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2010.png)
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2012.png)
     
 - **240104 회의록**
     
@@ -1337,57 +1375,146 @@ Slave status
     
     ## ✍ 스터디 내용
     
-    - 바커표기법으로 작성한 모델링에서 DDL 추출.
-    - Google docs 및 Chat gpt를 활용하여 Data 추출.
-    - 추출한 Data를 DML을 활용하여 DB를 구축.
-    - DB서버 구축 및 레플리카 서버를 구축하여 DB전송.
+    - Linux Ubuntu OS 환경의 replication DB 서버 구축 현황 확인
+    - 요구사항 명세서를 토대로 테스트케이스 정의서 작성
+    - 테스트케이스를 CRUD, JOIN, Transaction으로 구분해서 쿼리문 실행 및 영상 촬영
+    - 팀 노션을 통해 협업하여 README 내용 작성
     
     ## 📢 스터디 리뷰
     
     ### 1. 스터디 장소 및 시간
     
     - 장소 : 동작구 캠퍼스 제 1강의실
-    - 시간: 15:30 ~ 20:30 (5h)
+    - 시간: 14:00 ~ 19:00 (5h)
     
     ### 2. 스터디 회고
     
-    - DA#에서 스크립트 추출
+    - Linux Ubuntu OS 환경의 replication DB 서버 구축 현황 확인
         
-        [DA#에서 스크립트 추출.sql](README%2090456e44faab4013bf4520930090a7ab/DA%25EC%2597%2590%25EC%2584%259C_%25EC%258A%25A4%25ED%2581%25AC%25EB%25A6%25BD%25ED%258A%25B8_%25EC%25B6%2594%25EC%25B6%259C.sql)
+        <aside>
+        <img src="https://www.notion.so/icons/checkmark_gray.svg" alt="https://www.notion.so/icons/checkmark_gray.svg" width="40px" /> Ubuntu 20.04 / MariaDB 15.1
         
-    - Google docs를 통한 Data 구축
+        </aside>
         
-        [https://docs.google.com/document/d/1cLDQYzdDF8__3p3gDIuNCT71u_vzApKK814a-yq2SvM/edit](https://docs.google.com/document/d/1cLDQYzdDF8__3p3gDIuNCT71u_vzApKK814a-yq2SvM/edit)
+        ![Master status](README%2090456e44faab4013bf4520930090a7ab/Untitled%206.png)
         
-    - 추출한 Data를 DML을 활용하여 DB 구축
+        Master status
         
-        [DML 활용한 DB 구축.sql](README%2090456e44faab4013bf4520930090a7ab/DML_%25ED%2599%259C%25EC%259A%25A9%25ED%2595%259C_DB_%25EA%25B5%25AC%25EC%25B6%2595.sql)
+        ![Master IP: 192.168.0.50](README%2090456e44faab4013bf4520930090a7ab/Untitled%207.png)
+        
+        Master IP: 192.168.0.50
+        
+        ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%208.png)
+        
+        ![Slave Status: Slave 서버가 Master 서버를 잘 Following 하는 것 확인.](README%2090456e44faab4013bf4520930090a7ab/Untitled%2013.png)
+        
+        Slave Status: Slave 서버가 Master 서버를 잘 Following 하는 것 확인.
+        
+    - 요구사항 명세서를 토대로 테스트케이스 정의서 작성
+        
+        [요구사항명세서](https://docs.google.com/spreadsheets/d/1osO60pgOUC9nGXAfSiQJHdxwqVV4rpn3SHh1lWrW7-s/edit#gid=0)
+        
+        [테스트케이스 정의서](https://docs.google.com/spreadsheets/d/1qcAa6c_0MqGflC10ehZl9Xgtp1THU9ZJ3mJ6bYfTiaI/edit#gid=0)
+        
+    - 테스트케이스를 CRUD, JOIN, Transaction으로 구분해서 쿼리문 실행 및 영상 촬영
+        - 예시 : Create 케이스
+            
+            ![Linux Create Table.gif](README%2090456e44faab4013bf4520930090a7ab/Linux_Create_Table.gif)
+            
+    - 팀 Notion 을 이용, 협업하여 README 작성 (추후 Markdown 으로 export 예정)
+        
+        [README](README%2090456e44faab4013bf4520930090a7ab.md) 
         
     
-    - 오늘 스터디를 통해 특히 스터디의 중요성에 대해 알게 되었다. 많은 에러와 문제상황에 직면했는데 팀원들과 의견을 공유하면서 나아가 원하는 목표에 도달할 수 있었다고 생각한다.
-    - 스터디를 통해 프로젝트를 진행함으로써 집중력이 극대화 되었고, 모르는 부분을 팀원들이 적극적으로 알려주어 학습에도 큰 도움이 되었다.
-    - 스터디를 통해 다양한 창의적인 해결책을 알 수 있었으며 프로젝트 계획을 체계적으로 수립하고 진행하면서 발전해나가는 모습을 느낄 수 있었다.
+    - README를 작업하며 한명이 Markdown 을 붙잡아 모든 작업을 다 하지 않고, Notion으로 협업함으로서 시간 단축 효과를 얻을 수 있었다.
+    - Notion으로 작성 중에, 각자 맡은 파트 작성하는 동안 실시간으로 서로 피드백을 주며 작성 오류를 줄이는 시너지 효과를 낼 수 있었다.
+    - Google Spreadsheet를 통하여 요구사항 명세서와 테스트케이스 정의서를 작성하며 몇 가지 자잘한 오류들을 잡아낼 수 있었다.
     
     ### 3. 스터디 사진
     
-    ![240104_1조 팀활동1.jpg](README%2090456e44faab4013bf4520930090a7ab/240104_1%25EC%25A1%25B0_%25ED%258C%2580%25ED%2599%259C%25EB%258F%25991.jpg)
+    - 요구사항 명세서
+        
+        ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%201.png)
+        
+    - 테스트케이스 정의서
+        
+        ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%209.png)
+        
+    - README
+        
+        ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2014.png)
+        
+- **240108 회의록**
     
-    ![240104_1조 팀활동2.jpg](README%2090456e44faab4013bf4520930090a7ab/240104_1%25EC%25A1%25B0_%25ED%258C%2580%25ED%2599%259C%25EB%258F%25992.jpg)
+    ## ✍ 스터디 내용
+    
+    - 테스트케이스를 CRUD, JOIN, Transaction으로 구분해서 쿼리문 실행 및 영상 촬영
+    - 팀 노션을 통해 협업하여 README 내용 작성
+    - 개념 모델링 추가 작성
+    - 노션의 README를 Github에 업로드 하기 위해 마크다운 작업
+    - 프로젝트 회고록 작성
+    
+    ## 📢 스터디 리뷰
+    
+    ### 1. 스터디 장소 및 시간
+    
+    - 장소 : 동작구 캠퍼스 제 1강의실
+    - 시간: 9:30 ~ 12:00 (2h 30m)
+    
+    ### 2. 스터디 회고
+    
+    - 테스트케이스를 CRUD, JOIN, Transaction으로 구분해서 쿼리문 실행 및 영상을 촬영하였다.
+        - 예시 : CRUD 중 update 케이스
+            
+            ![update.gif](README%2090456e44faab4013bf4520930090a7ab/update%201.gif)
+            
+        
+    - 테스트케이스 영상 작업 시 Notion으로 작업하며 파트를 분배하여 협업함으로써 쿼리문 실행 영상 촬영 시간을 단축할 수 있었다.
+    - 작업 과정을 순차적으로 나타내기 위해 개념 모델링을 추가로 작성하였다.
+        
+        ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%202.png)
+        
+    - Notion으로 작업한 README를 Github에 업로드 하는 과정에서 토글이 적용되지 않는 문제점을 발견하였다. 이에 마크다운 작업을 통해 Github에서도 토글이 적용되도록 수정하였다.
+    
+    ### 3. 스터디 사진
+    
+    ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2015.png)
     
 
-### 6-2. 예상치 못한 깨달음
+### 6-2. 개선 여지
 
-- **슈퍼타입, 서브타입 - exclusive 관계, inclusive관계**
+### 서브 타입의 물리모델 결정기준
 
-![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2011.png)
+- Rollup, Rolldown, Identity ****
+
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2016.png)
+
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2017.png)
+
+![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%2018.png)
+
+- 초기 의도 :
+    
+    초기에는 데이터 관리의 용이함을 위해 강사와 직원 테이블을 별도로 구분하였다. 그러나 논리 모델링을 물리 모델링으로 구현하는 과정에서 출퇴근 관리를 위해 강사와 직원을 하나의 테이블에서 관리할 수 있도록 Rollup 방식으로 변경하였다.
+    그 결과 테이블을 조회 시에 NULL값이 많이 발생하였다.
+    
+- 개선할 점:
+    
+    1) 강사와 직원 테이블에서 중복되는 컬럼값(이름, 연락처, 주소, 사진 등)을 구성원 정보 테이블로 통합하여 NULL이 발생하는 컬럼을 최소화하는 것이 필요하다.
+    
+    2) 강사와 직원을 구분하는 컬럼을 별도로 생성하여 조회의 편의성을 높여야 한다.
+    
+    3) 데이터의 증가에 따라 RollUp 방식이 아닌 Identity 방식으로 테이블을 유지함으로써 데이터의 확장성을 향상시킨다.
+    
 
 ### 6-3. 개인적 감상
 
 | 조원명 | 회고록 |
 | --- | --- |
-| 소우주 |  |
-| 손세림 |  |
-| 신대영 |  |
-| 양지혜 |  |
-| 조예린 |  |
-| 지현근 |  |
+| 소우주 | 재수학원에서 일했던 경험을 살려 조금 더 디테일한 부분에 초점을 맞출 수 있었습니다. 많은 시간 동안 팀원들과 소통하면서 DB 모델링에 대한 이해가 깊어질 수 있었고, 더욱 좋은 성능을 내는 서브타입 모델링이 무엇일지 상황에 맞게 고민하며 진행하는 것의 중요성을 느꼈습니다. |
+| 손세림 | 이번 프로젝트를 통해 데이터 모델링을 처음 접하게되어 서비스의 구상부터 사용자 요구사항을 명세화하고 ERD 모델링하여 서버에 배포하기까지 구체적 경험을 할 수 있었습니다.
+첫 프로젝트인 만큼 모델링에 대한 이해가 부족하여 아쉬운 부분도 있었지만 팀원들과 여러 의견을 나누고 협업하며 개인으로서 부족했던 부분도 함께 채워나갈 수 있는 값진 시간이였습니다. |
+| 신대영 | 서브타입에 대한 부족한 이해로 인해 모델링 시 효과적인 상속 및 일관된 구조를 설계하지 못하였습니다. 서브타입의 중요성과 활용 방안을 명확히 이해하고 프로젝트에 적용하는 능력을 향상시켜야 한다는 인식을 얻게 되었습니다. 또한 팀원들과 소통하며 공동 이해를 도출하는 과정이 유기적으로 잘 이루어져 부족하지만 성공적인 결과물을 완성하였습니다. |
+| 양지혜 | 짧은 시간 동안 밀도 높은 협업 활동을 하였습니다. 결과가 완벽하지는 않더라도 팀원들끼리 아이디어를 나누고 토론하며 하나의 일관된 목표를 향해 나아가는 경험은 아주 감명 깊었습니다. 차후에는 시스템의 성능 개선을 좀 더 고려하여 발전한 성과를 이루고자 합니다. |
+| 조예린 | 결정하는 데 있어 팀원들과 여러 의견 조율이 있었고, 하나의 주제에 대한 모델링이라도 다양한 접근이 가능하다는 것을 느꼈습니다. 특히, 물리 모델을 결정할 때 비즈니스 로직을 고려하여 모델의 유연성과 확장성을 고려해야 한다는 경험을 통해 최적화에 대한 이해가 더 깊어졌습니다. 팀의 목표를 위해 함께 노력하는 경험은 프로젝트 완수뿐만 아니라 개인적인 성장에도 큰 도움이 되었습니다. |
+| 지현근 | 이번 프로젝트를 통해 정확하게 확립되지 않았던 개념을 직접 활용해봄으로써 DB 및 리눅스 개념 확립에 큰 도움이 되었다고 생각합니다. 또한 프로젝트 도중 어려움에 직면하는 상황이 있었지만 팀원들과의 협업 및 조언을 통해 해결해나가는 모습을 통해 팀 협업의 중요성과 팀원들에게 감사함을 느꼈습니다. 또한 세부적인 설계 과정의 중요성에 대해 깨달았으며 이번 프로젝트를 통해 배운 내용을 토대로 스스로 보완하여 다음 프로젝트에는 더 나은 결과물을 만들어 나가겠습니다. |
