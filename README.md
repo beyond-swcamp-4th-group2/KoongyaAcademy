@@ -67,7 +67,7 @@ ERD Cloud를 사용한 개념/논리 모델링 작성
 
 ![Untitled](README%2090456e44faab4013bf4520930090a7ab/Untitled%203.png)
 
-- **DDL Query**
+> **DDL Query**
     
     ```sql
     -- CREATE
